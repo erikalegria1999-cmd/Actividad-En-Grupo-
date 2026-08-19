@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Empresa</title>
+    <title>Registro de Empleado</title>
 </head>
 <body>
-    <h1>Registro</h1>
-    <label for="">nombre</label>
-    <input type="text"
-    id="nombre"
-    placeholder="nombre">
-    <br><br>
-    <label for="apellido">apellido</label>
-    <input type="text"
-    id="apellido"
-    placeholder="apellido">
-    <br><br>
-    <label for=""></label>
+    <h1>Registro de Empleado</h1>
+    <form id="registroForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+        <br><br>
+        <label for="cargo">Cargo:</label>
+        <select id="cargo" required>
+            <option value="">Seleccione un cargo</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Empleado">Empleado</option>
+        </select>
+        <br><br>
+        <label for="area">Área:</label>
+        <input type="text" id="area" required>
+        <br><br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required>
+        <br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" required>
+        <br><br>
+        <button type="submit">Registrar empleado</button>
+    </form>
+    <p id="mensaje"></p>
+    <hr>
+    <a href="">Volver al inicio de sesión</a>
+    <script src="registro.js"></script>
+
 </body>
 </html>
