@@ -9,13 +9,16 @@
     <h1>Registro de Empleado</h1>
     <form id="registroForm">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+        <input type="text" 
+        id="nombre" required>
         <br><br>
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" required>
+        <input type="text" 
+        id="apellido" required>
         <br><br>
         <label for="cargo">Cargo:</label>
-        <select id="cargo" required>
+        <select 
+        id="cargo" required>
             <option value="">Seleccione un cargo</option>
             <option value="Gerente">Gerente</option>
             <option value="Supervisor">Supervisor</option>
@@ -23,15 +26,18 @@
         </select>
         <br><br>
         <label for="area">Área:</label>
-        <input type="text" id="area" required>
+        <input type="text" 
+        id="area" required>
         <br><br>
         <label for="correo">Correo:</label>
-        <input type="email" id="correo" required>
+        <input type="email" 
+        id="correo" required>
         <br><br>
         <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" required>
+        <input type="password" 
+        id="contrasena" required>
         <br><br>
-        <button type="submit">Registrar empleado</button>
+        <button onclick="registrar()">Registrar empleado</button>
     </form>
     <p id="mensaje"></p>
     <hr>
